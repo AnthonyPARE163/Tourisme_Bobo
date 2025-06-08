@@ -3,8 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ville Touristique - Monuments</title>
+  <title>Ville Touristique - Marché de Bobo</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .patrimoines img {
+      width: 100%;
+      height: auto;
+      max-width: 700px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.8em;
+    }
+
+    .paragraphe-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .paragraphe-flex p {
+      flex: 1 1 300px;
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .paragraphe-flex {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .paragraphe-flex p {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,17 +63,31 @@
       <li><a href="Galerie2.html"><b>Galerie</b></a></li>
     </ul>
   </nav>
+
   <main>
-    <div class="patrimoines"><a href="site4.html"><img src="marche.jpeg" alt="Marché de Bobo Dioulasso" width="700" height="400"></li>
-      </a></div><label><b>Marché de Bobo Dioulasso</b></label> 
-<p>Le marché de Bobo-Dioulasso, également connu sous le nom de Grand Marché, est un marché central situé dans la ville de Bobo-Dioulasso, au Burkina Faso. C'est l'un des marchés les plus importants et animés du pays, offrant une variété de produits et une expérience authentique de shopping.</p>
-<p>Le marché de Bobo-Dioulasso est un véritable centre commercial où l'on peut trouver presque tout ce dont on a besoin pour vivre au Burkina Faso. Des vêtements aux seaux en plastique, en passant par les bijoux et les produits de beauté, le marché propose une large gamme de produits locaux et artisanaux.</p>
-<p>L'histoire du marché remonte à plusieurs décennies. Il a évolué au fil du temps pour devenir un lieu de rencontre et d'échange pour les habitants de Bobo-Dioulasso et les visiteurs. Le marché est un reflet de la vie quotidienne de la population locale, où les commerçants vendent leurs produits frais, leurs épices, leurs tissus colorés et bien plus encore.</p>
-<p>En vous promenant dans les allées animées du marché, vous pourrez découvrir la diversité culturelle et la richesse des traditions burkinabè. C'est également un endroit idéal pour goûter à la cuisine locale, avec de nombreux stands proposant des plats traditionnels et des spécialités régionales.</p>
-<p>Le marché de Bobo-Dioulasso est non seulement un lieu de commerce, mais aussi un lieu de vie où les gens se retrouvent, discutent et partagent des histoires. C'est une expérience incontournable pour les visiteurs qui souhaitent découvrir l'authenticité et la vitalité de la culture burkinabè.</p>
+    <div class="patrimoines">
+      <a href="site4.html">
+        <img src="marche.jpeg" alt="Marché de Bobo Dioulasso">
+      </a>
+    </div>
+
+    <h2><b>Marché de Bobo-Dioulasso</b></h2>
+
+    <div class="paragraphe-flex">
+      <p>Le marché de Bobo-Dioulasso, également connu sous le nom de Grand Marché, est un marché central situé dans la ville de Bobo-Dioulasso, au Burkina Faso. C'est l'un des marchés les plus importants et animés du pays, offrant une variété de produits et une expérience authentique de shopping.</p>
+      <p>Le marché de Bobo-Dioulasso est un véritable centre commercial où l'on peut trouver presque tout ce dont on a besoin pour vivre au Burkina Faso. Des vêtements aux seaux en plastique, en passant par les bijoux et les produits de beauté, le marché propose une large gamme de produits locaux et artisanaux.</p>
+      <p>L'histoire du marché remonte à plusieurs décennies. Il a évolué au fil du temps pour devenir un lieu de rencontre et d'échange pour les habitants de Bobo-Dioulasso et les visiteurs.</p>
+      <p>Le marché est un reflet de la vie quotidienne de la population locale, où les commerçants vendent leurs produits frais, leurs épices, leurs tissus colorés et bien plus encore.</p>
+      <p>En vous promenant dans les allées animées du marché, vous pourrez découvrir la diversité culturelle et la richesse des traditions burkinabè. C'est également un endroit idéal pour goûter à la cuisine locale, avec de nombreux stands proposant des plats traditionnels et des spécialités régionales.</p>
+      <p>Le marché de Bobo-Dioulasso est non seulement un lieu de commerce, mais aussi un lieu de vie où les gens se retrouvent, discutent et partagent des histoires.</p>
+      <p>C'est une expérience incontournable pour les visiteurs qui souhaitent découvrir l'authenticité et la vitalité de la culture burkinabè.</p>
+    </div>
   </main>
-</body>
-<footer>
+
+  <footer>
     <p><b>Tous droits réservés &copy; 2025 Ville Touristique</b></p>
   </footer>
-</html>
+</body>
+</html>
+
+
