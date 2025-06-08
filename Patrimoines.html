@@ -86,11 +86,39 @@
       background: #222;
       color: white;
     }
+    * Style de base : défilement horizontal */
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery figure {
+      min-width: 700px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    /* Pour écrans petits : vertical */
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .gallery figure {
+        min-width: 100%;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo2.jpg" alt="BOBO DIOULASSO" />
+    <img src="bobo-dioulasso.jpeg" alt="BOBO DIOULASSO" />
     <h1>Patrimoine de la Ville de Bobo Dioulasso</h1>
   </header>
 
