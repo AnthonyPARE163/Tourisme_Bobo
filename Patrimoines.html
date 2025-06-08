@@ -60,12 +60,15 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
     .gallery figure {
-      flex: 1 1 300px;
-      max-width: 100%;
+      width: 100%;
+      max-width: 300px;
       text-align: center;
+      margin: 0 auto;
     }
 
     .gallery img {
@@ -85,34 +88,6 @@
       padding: 15px;
       background: #222;
       color: white;
-    }
-    * Style de base : défilement horizontal */
-    .gallery {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      padding: 20px;
-    }
-    .gallery figure {
-      min-width: 700px;
-      text-align: center;
-      flex-shrink: 0;
-    }
-
-    /* Pour écrans petits : vertical */
-    @media (max-width: 768px) {
-      .gallery {
-        flex-direction: column;
-        overflow-y: auto;
-        overflow-x: hidden;
-      }
-      .gallery figure {
-        min-width: 100%;
-      }
-      .gallery img {
-        width: 100%;
-        height: auto;
-      }
     }
   </style>
 </head>
