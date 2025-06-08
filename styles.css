@@ -1,0 +1,357 @@
+/* CSS principal avec couleurs valorisant la ville de Bobo-Dioulasso */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.logo {
+  width: 200px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 35px;
+  margin: 0;
+  color: #cc5200;
+  text-align: center;
+}
+
+h2 {
+  color: #cc5200;
+  text-decoration: none;
+}
+
+nav {
+  background: #444;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-image: linear-gradient(to right, #ff9900, #cc3300);
+  color: white;
+  border-radius: 4px;
+}
+
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #333;
+  background-image: linear-gradient(to right, #ffcc66, #ff9966);
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+
+@media screen and (max-width: 760px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-bottom: 1px;
+  }
+  .show-menu {
+    display: block;
+  }
+}
+
+main {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right,#ffecd2,#fcb69f);
+  margin: 0;
+  padding: 20px;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  color: #cc5200;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff4e6;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #cc5200;
+  text-align: left;
+  font-size: 18px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+input[type="submit"] {
+  color: #333;
+  background-color: #fffaf3;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 90%;
+  transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: #cc5200;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.to {
+  background-image: linear-gradient(to right,#ffcc66,#ff9966);
+  font-size: 30px;
+}
+
+.patrimoines img {
+  border-radius: 1.5em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
+  padding: 20px;
+}
+
+.ok {
+  background-image: url('Monu.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+
+.ok .daccord {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.ok.loaded .daccord {
+  opacity: 1;
+}
+
+.ens {
+  background-image: linear-gradient(to right,#ffcc66,#ff9966);
+}
+
+.team {
+  display: flex;
+  padding: 20px;
+  background-image: linear-gradient(to right,#ffcc66,#ff9966);
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.e {
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #fff4e6;
+  transition: all 1s;
+}
+
+.e h3 {
+  color: #cc5200;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.e p {
+  color: #333;
+  text-align: justify;
+  padding: 0 8px;
+}
+
+.e span a {
+  text-decoration: none;
+  color: purple;
+  margin-left: 2px;
+}
+
+.ensemble {
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.defilercarte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotelimage {
+  width: 100%;
+  height: 10em;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.hotelimage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  object-fit: cover;
+  transition: all 1s;
+}
+
+.carte {
+  width: 16em;
+  height: 25em;
+  background-color: #fff4e6;
+  border-radius: 1.5em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.titre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cc5200;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.texte {
+  text-align: center;
+  font-size: 1.08rem;
+  margin-top: 4px;
+}
+
+.buttn {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-image: linear-gradient(to right, #ffcc66, #ff9966);
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.buttn a,
+.buttn span {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.gallery, .gastro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.gallery img, .gastro img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 150px;
+    height: 50px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .patrimoines {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .team {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery, .gastro {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery, .gastro {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  body {
+    font-size: 14px;
+  }
+  .logo {
+    width: 200px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}

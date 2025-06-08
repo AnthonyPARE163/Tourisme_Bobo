@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ville Touristique - Réservation d'Hôtel</title>
+</head>
+<body>
+  <header>
+    <img src="logo2.jpg" alt="BOBO DIOULASSO" style="max-height:80px; display:block; margin:auto;">
+    <h1 style="text-align:center;">Réserver un hôtel à Bobo Dioulasso</h1>
+  </header>
+
+  <nav>
+    <ul style="list-style:none; display:flex; justify-content:center; padding:0; margin:0; background:#444;">
+      <li style="margin:0 15px;"><a href="index.html" style="color:white; text-decoration:none;">Accueil</a></li>
+      <li style="margin:0 15px;"><a href="Patrimoines.html" style="color:white; text-decoration:none;">Patrimoine</a></li>
+      <li style="margin:0 15px;"><a href="hotels.html" style="color:white; text-decoration:none;">Réservation d'hôtel</a></li>
+      <li style="margin:0 15px;"><a href="Galerie2.html" style="color:white; text-decoration:none;">Galerie</a></li>
+    </ul>
+  </nav>
+
+  <main style="max-width:800px; margin:auto; padding:20px;">
+    <p>Profitez d'un séjour inoubliable dans nos hôtels partenaires à Bobo Dioulasso. Veuillez remplir le formulaire ci-dessous pour effectuer une réservation :</p>
+
+    <form action="traitement_formulaire.php" method="POST">
+      <fieldset>
+        <legend><strong>Formulaire de Réservation</strong></legend>
+        <table>
+          <tr>
+            <td><label for="nom">Nom :</label></td>
+            <td><input type="text" id="nom" name="nom" required></td>
+          </tr>
+          <tr>
+            <td><label for="prenom">Prénom :</label></td>
+            <td><input type="text" id="prenom" name="prenom" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email :</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td><label for="telephone">Téléphone :</label></td>
+            <td><input type="tel" id="telephone" name="telephone" required></td>
+          </tr>
+          <tr>
+            <td><label for="date_arrivee">Date d'arrivée :</label></td>
+            <td><input type="date" id="date_arrivee" name="date_arrivee" required></td>
+          </tr>
+          <tr>
+            <td><label for="date_depart">Date de départ :</label></td>
+            <td><input type="date" id="date_depart" name="date_depart" required></td>
+          </tr>
+          <tr>
+            <td><label for="nombre_personnes">Nombre de personnes :</label></td>
+            <td><input type="number" id="nombre_personnes" name="nombre_personnes" min="1" required></td>
+          </tr>
+          <tr>
+            <td><label for="type_chambre">Type de chambre :</label></td>
+            <td>
+              <select id="type_chambre" name="type_chambre" required>
+                <option value="">Sélectionnez un type de chambre</option>
+                <option value="simple">Chambre simple</option>
+                <option value="double">Chambre double</option>
+                <option value="suite">Suite</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <input type="submit" value="Réserver">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer style="text-align:center; padding:15px; background:#222; color:white;">
+    <p><strong>Tous droits réservés &copy; 2025 Ville Touristique</strong></p>
+  </footer>
+</body>
+</html>
