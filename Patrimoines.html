@@ -1,99 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ville Touristique - Monuments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 80px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      background: #444;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #cc3300;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #cc5200;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery figure {
+      flex: 1 1 300px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    figcaption h3 {
+      font-size: 1em;
+      margin: 10px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="logo2.jpg" alt="BOBO DIOULASSO" style="max-height:80px; display:block; margin:auto;">
-    <h1 style="text-align:center;">Patrimoine de la Ville de Bobo Dioulasso</h1>
+    <img src="logo2.jpg" alt="BOBO DIOULASSO" />
+    <h1>Patrimoine de la Ville de Bobo Dioulasso</h1>
   </header>
 
   <nav>
-    <ul style="list-style:none; display:flex; justify-content:center; padding:0; margin:0; background:#444;">
-      <li style="margin:0 15px;"><a href="index.html" style="color:white; text-decoration:none;">Accueil</a></li>
-      <li style="margin:0 15px;"><a href="Patrimoines.html" style="color:white; text-decoration:none;">Patrimoine</a></li>
-      <li style="margin:0 15px;"><a href="hotels.html" style="color:white; text-decoration:none;">Réservation d'hôtel</a></li>
-      <li style="margin:0 15px;"><a href="Galerie2.html" style="color:white; text-decoration:none;">Galerie</a></li>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="Patrimoines.html">Patrimoine</a></li>
+      <li><a href="hotels.html">Réservation d'hôtel</a></li>
+      <li><a href="Galerie2.html">Galerie</a></li>
     </ul>
   </nav>
 
-  <main style="padding:20px;">
+  <main>
     <section>
-      <h2 style="text-align:center;">Découvrez les monuments historiques et culturels de notre ville</h2>
-      <div style="display:flex; overflow-x:auto; gap:20px; padding:20px;">
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site1.html"><img src="mosquee.jpeg" alt="Grande Mosquée de Bobo Dioulasso" width="700" height="400"></a>
+      <h2>Découvrez les monuments historiques et culturels de notre ville</h2>
+      <div class="gallery">
+        <figure>
+          <a href="site1.html"><img src="mosquee.jpeg" alt="Grande Mosquée de Bobo Dioulasso" /></a>
           <figcaption><h3>Grande Mosquée de Bobo Dioulasso</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site2.html"><img src="maison.jpeg" alt="Maison des Jeunes et de la Culture" width="700" height="400"></a>
+        <figure>
+          <a href="site2.html"><img src="maison.jpeg" alt="Maison des Jeunes et de la Culture" /></a>
           <figcaption><h3>Maison des Jeunes et de la Culture</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site3.html"><img src="musee.jpeg" alt="Musée Provincial du Houët" width="700" height="400"></a>
+        <figure>
+          <a href="site3.html"><img src="musee.jpeg" alt="Musée Provincial du Houët" /></a>
           <figcaption><h3>Musée Provincial du Houët</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site4.html"><img src="marche.jpeg" alt="Marché de Bobo Dioulasso" width="700" height="400"></a>
+        <figure>
+          <a href="site4.html"><img src="marche.jpeg" alt="Marché de Bobo Dioulasso" /></a>
           <figcaption><h3>Marché de Bobo Dioulasso</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site5.html"><img src="foret.jpeg" alt="La Forêt Classée du KOU" width="700" height="400"></a>
+        <figure>
+          <a href="site5.html"><img src="foret.jpeg" alt="La Forêt Classée du KOU" /></a>
           <figcaption><h3>La Forêt Classée du KOU</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site6.html"><img src="guimbi.jpeg" alt="Mausolée de Guimbi Ouattara" width="700" height="400"></a>
+        <figure>
+          <a href="site6.html"><img src="guimbi.jpeg" alt="Mausolée de Guimbi Ouattara" /></a>
           <figcaption><h3>Mausolée de Guimbi Ouattara</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site7.html"><img src="sogossira.jpeg" alt="Musée Municipal Sogossira Sanon" width="700" height="400"></a>
+        <figure>
+          <a href="site7.html"><img src="sogossira.jpeg" alt="Musée Municipal Sogossira Sanon" /></a>
           <figcaption><h3>Musée Municipal Sogossira Sanon</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site8.html"><img src="cascades.jpeg" alt="Cascade de Karfiguéla" width="700" height="400"></a>
+        <figure>
+          <a href="site8.html"><img src="cascades.jpeg" alt="Cascade de Karfiguéla" /></a>
           <figcaption><h3>Cascade de Karfiguéla</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site9.html"><img src="senoufo.jpeg" alt="Centre Culturel Sénoufo René-Fournier" width="700" height="400"></a>
+        <figure>
+          <a href="site9.html"><img src="senoufo.jpeg" alt="Centre Culturel Sénoufo René-Fournier" /></a>
           <figcaption><h3>Centre Culturel Sénoufo René-Fournier</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site10.html"><img src="parc.jpeg" alt="Parc National de la Comoé" width="700" height="400"></a>
+        <figure>
+          <a href="site10.html"><img src="parc.jpeg" alt="Parc National de la Comoé" /></a>
           <figcaption><h3>Parc National de la Comoé</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site11.html"><img src="dafra.jpeg" alt="Lac aux silures sacrés de Dafra" width="700" height="400"></a>
+        <figure>
+          <a href="site11.html"><img src="dafra.jpeg" alt="Lac aux silures sacrés de Dafra" /></a>
           <figcaption><h3>Lac aux silures sacrés de Dafra</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site12.html"><img src="cathedrale.jpeg" alt="Cathédrale Notre-Dame de Lourdes" width="700" height="400"></a>
+        <figure>
+          <a href="site12.html"><img src="cathedrale.jpeg" alt="Cathédrale Notre-Dame de Lourdes" /></a>
           <figcaption><h3>Cathédrale Notre-Dame de Lourdes</h3></figcaption>
         </figure>
 
-        <figure style="min-width:700px; text-align:center;">
-          <a href="site13.html"><img src="mare.jpeg" alt="Mare aux Hippopotames de Bala" width="700" height="400"></a>
+        <figure>
+          <a href="site13.html"><img src="mare.jpeg" alt="Mare aux Hippopotames de Bala" /></a>
           <figcaption><h3>Mare aux Hippopotames de Bala</h3></figcaption>
         </figure>
       </div>
     </section>
   </main>
 
-  <footer style="text-align:center; padding:15px; background:#222; color:white;">
-    <p>&copy;Tous droits réservés. 2025 Ville Touristique. </p>
+  <footer>
+    <p>&copy; Tous droits réservés. 2025 Ville Touristique.</p>
   </footer>
 </body>
-</html>
+</html>
+
+
