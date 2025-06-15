@@ -117,14 +117,14 @@ input[type=checkbox]:checked ~ #menu {
 
 .member-name {
   font-size: 20px;
-  color: #333;
+  color: #cc5200;
   margin-bottom: 10px;
-  transition: color 0.3s ease-in-out;
   text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
 }
 
 .member-name span {
-  color: #cc5200;
+  color: #ff6600;
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
@@ -133,12 +133,13 @@ input[type=checkbox]:checked ~ #menu {
 
 .team-card:hover .member-name span {
   transform: scale(1.1);
-  color: #a63f00;
+  color: #e65c00;
 }
 
 .team-card p {
   font-size: 15px;
-  color: #555;
+  color: #663300;
+  text-align: justify;
 }
 
 .team-card a {
@@ -148,6 +149,7 @@ input[type=checkbox]:checked ~ #menu {
 
 .team-card a:hover {
   text-decoration: underline;
+  color: #ff6600;
 }
 
 
