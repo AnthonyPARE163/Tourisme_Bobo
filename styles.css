@@ -1,29 +1,31 @@
 /* === STYLES GÉNÉRAUX === */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8f0;
   margin: 0;
   padding: 0;
   text-align: center;
+  color: #4d2600;
 }
 
 h1, h2 {
-  color: #cc5200;
+  color: #b34700;
   margin: 0;
-  text-align: center;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  text-decoration: none;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 /* === HEADER === */
 header {
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -39,8 +41,7 @@ header {
 
 /* === NAVIGATION === */
 nav {
-  background: #444;
-  padding: 0;
+  background: #663300;
 }
 
 nav ul {
@@ -58,55 +59,40 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 12px;
   display: inline-block;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 nav ul li a:hover {
   background-image: linear-gradient(to right, #ff9900, #cc3300);
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-.show-menu {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #333;
-  background-image: linear-gradient(to right, #ffcc66, #ff9966);
-  text-align: center;
-  padding: 10px 0;
-  display: none;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked ~ #menu {
-  display: block;
-}
-
-/* === MAIN & SECTIONS === */
+/* === MAIN === */
 main {
-  background-image: linear-gradient(to right, #ffecd2, #fcb69f);
-  padding: 20px;
+  background-image: linear-gradient(to right, #fff2e6, #ffe0cc);
+  padding: 30px 10px;
 }
 
-footer {
-  background-color: #ffffff;
-  padding: 10px;
-  color: #cc5200;
-  text-align: center;
+/* === SECTION PATRIMOINE === */
+.patrimoine {
+  background-color: #fff4e6;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(204, 82, 0, 0.15);
+  margin: 20px auto;
+  max-width: 1100px;
 }
 
-.patrimoine img,
-.patrimoines img,
-.gallery img,
-.gastro img {
-  border-radius: 1.5em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
+.patrimoine img {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   padding: 20px;
   max-width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 /* === PARAGRAPHES === */
@@ -114,213 +100,71 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .paragraphe {
-  background-color: #fff4e6;
-  padding: 15px;
-  border-radius: 10px;
+  background-color: #ffe8cc;
+  padding: 20px;
+  border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: justify;
-  color: #333;
+  color: #4d2600;
 }
 
-/* === FORMULAIRE === */
-form {
-  max-width: 600px;
-  margin: auto;
-  background-color: #fff4e6;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.paragraphe p {
+  margin: 0;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  color: #cc5200;
-  text-align: left;
-  font-size: 18px;
-}
-
-input[type="number"],
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select,
-input[type="submit"] {
-  color: #333;
-  background-color: #fffaf3;
-  border: 1px solid #ccc;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 5px;
-  width: 90%;
-  transition: border-color 0.3s ease;
-}
-
-input[type="submit"] {
-  background-color: #cc5200;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* === TEAM SECTION === */
-.team-section {
-  background: #f9f9f9;
-  padding: 40px 20px;
-}
-
-.team-title {
-  font-size: 32px;
-  margin-bottom: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.team-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.team-card {
-  background: white;
-  border-radius: 15px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 280px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(204, 82, 0, 0.3);
-}
-
-.member-name {
-  font-size: 20px;
-  color: #cc5200;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.member-name span {
-  color: #ff6600;
-  font-size: 18px;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-}
-
-.team-card:hover .member-name span {
-  transform: scale(1.1);
-  color: #e65c00;
-}
-
-/* === SECTIONS DÉFILANTES === */
-.ok {
-  background: url('Monu.jpg') center/cover no-repeat;
-  height: 500px;
-  position: relative;
-}
-
-.ok .daccord {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.ok.loaded .daccord {
-  opacity: 1;
-}
-
-/* === CARTE HOTEL & GALERIE === */
-.ensemble {
-  background-image: linear-gradient(to right, #ffecd2, #fcb69f);
-  padding: 0;
-}
-
-.defilercarte {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.carte {
-  width: 16em;
-  height: 25em;
-  background-color: #fff4e6;
-  border-radius: 1.5em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
-  padding: 2em 1em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 0;
-}
-
-.hotelimage {
-  width: 100%;
-  height: 10em;
-  border-radius: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.hotelimage img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5em;
-  object-fit: cover;
-  transition: all 1s;
-}
-
+/* === TITRE ET TEXTE === */
 .titre {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: #cc5200;
+  color: #b34700;
+  margin-bottom: 10px;
 }
 
 .texte {
-  text-align: center;
-  font-size: 1.08rem;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #663300;
 }
 
+/* === BOUTON === */
 .buttn {
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  height: 45px;
   background-image: linear-gradient(to right, #ffcc66, #ff9966);
   border-radius: 10px;
-  margin: 1em auto;
   border: none;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .buttn a, .buttn span {
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* === GALERIE & GASTRONOMIE === */
-.gallery, .gastro {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+.buttn:hover {
+  transform: scale(1.05);
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #fff;
+  padding: 20px;
+  color: #cc5200;
+  text-align: center;
+  border-top: 1px solid #ddd;
 }
 
 /* === RESPONSIVE === */
@@ -330,111 +174,30 @@ input[type="submit"] {
     align-items: center;
   }
 
-  .paragraphe-container,
-  .team {
-    flex-direction: column;
-  }
-
   .logo {
     width: 100%;
     max-width: 300px;
     height: auto;
   }
 
-  .paragraphe {
-    width: 95%;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  header {
+  .paragraphe-container {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
-}
 
-@media (max-width: 700px) {
-  .gallery, .gastro {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .gallery, .gastro {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 620px) {
-  body {
-    font-size: 14px;
+  .paragraphe {
+    width: 90%;
   }
 
   h1 {
+    font-size: 28px;
+  }
+
+  h2 {
     font-size: 24px;
   }
-}
-.patrimoine {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffe8cc;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(204, 82, 0, 0.15);
-}
 
-.patrimoine img {
-  border-radius: 1.5em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
-  padding: 20px;
-  margin-bottom: 10px;
-  max-width: 100%;
-  height: auto;
+  main {
+    padding: 20px 10px;
+  }
 }
-
-.paragraphe {
-  background-color: #fff0e0;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: justify;
-}
-
-.paragraphe p {
-  margin: 0;
-  color: #4d2600;
-}
-
-.carte {
-  width: 16em;
-  height: 25em;
-  background-color: #ffe8cc;
-  border-radius: 1.5em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
-  padding: 2em 1em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 0;
-}
-
-.titre {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #cc5200;
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-.texte {
-  text-align: center;
-  font-size: 1.08rem;
-  margin-top: 4px;
-  color: #663300;
-}
-
